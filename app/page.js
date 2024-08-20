@@ -61,7 +61,7 @@ export default function Home() {
   return (
     <Box
       sx={{
-        backgroundImage: `url('https://img.freepik.com/free-vector/winter-light-blue-gradient-background_53876-120755.jpg?w=996&t=st=1724122027~exp=1724122627~hmac=5a5dcd19068e9a14ebea15647eab0fa6dfdb02524efb25b9e06b88cee14b686f')`,
+        backgroundImage: `url('https://unbounce.com/photos/Gradient-Background.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
