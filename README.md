@@ -1,39 +1,29 @@
 Project live link: https://ai-chatbot-sand-alpha.vercel.app/
 
+AI-Powered Computer Science Advisor
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Overview:
 
-## Getting Started
+This project is an AI-powered support agent designed to assist students majoring in Computer Science. It utilizes the power of OpenAI's GPT model to 
+provide course recommendations, professor suggestions, and general advice for students at a fictional or specific college. The project is built using FastAPI 
+for the backend and integrates with Pinecone to retrieve relevant contextual information based on user input.
 
-First, run the development server:
+Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Course Recommendations: Suggests classes and professors based on the user's input and current academic standing.
+Context-Aware Conversations: Uses Pinecone to provide relevant information based on past interactions.
+Interactive Frontend: A responsive frontend built with React and Material-UI that allows students to interact with the AI support agent.
+Streamed Responses: The AI provides responses in real-time, improving user experience by streaming the output as it is generated.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tech Stack:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Backend: FastAPI, OpenAI GPT-4, Pinecone, Uvicorn
+Frontend: React, Material-UI, Next.js
+Hosting: Vercel for frontend, FastAPI backend (can be hosted on Vercel or other platforms)
+APIs: OpenAI, Pinecone
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Issues Encountered & Resolutions:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+SSL Issue: Encountered an SSL error due to an incorrect API endpoint. Resolved by verifying the endpoint and ensuring the correct API key was used.
+Streaming Responses: Initial implementation did not stream responses correctly. The backend was modified to use FastAPI's StreamingResponse to stream data.
+Pinecone Integration: Faced issues with integrating Pinecone for context-aware searches. Resolved by carefully constructing the embeddings and refining query logic.
