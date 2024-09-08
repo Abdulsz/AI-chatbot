@@ -5,13 +5,13 @@ AI-Powered Computer Science Advisor
 Overview:
 
 This project is an AI-powered support agent designed to assist students majoring in Computer Science. It utilizes the power of OpenAI's GPT model to 
-provide course recommendations, professor suggestions, and general advice for students at a fictional or specific college. The project is built using FastAPI 
+provide course recommendations, professor suggestions, and general advice for students at Augustana College(my college). The project is built using FastAPI 
 for the backend and integrates with Pinecone to retrieve relevant contextual information based on user input.
 
 Features:
 
 Course Recommendations: Suggests classes and professors based on the user's input and current academic standing.
-Context-Aware Conversations: Uses Pinecone to provide relevant information based on past interactions.
+Implemented RAG using Pinecone so the chatbot responds based on a given knowledge base
 Interactive Frontend: A responsive frontend built with React and Material-UI that allows students to interact with the AI support agent.
 Streamed Responses: The AI provides responses in real-time, improving user experience by streaming the output as it is generated.
 
